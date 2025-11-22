@@ -61,12 +61,15 @@ Redis
 
 Celery worker
 
-📦 Tech Stack
-Component	Technology
-Language	Python 3
-Backend	Django REST Framework
-Database	PostgreSQL
-Cache	Redis
-Async Worker	Celery
-OAuth	Spotify Web API
-Deployment	Docker & Docker Compose
+## 🛠 Tech Stack
+
+| 🔧 Component | 🚀 Technology |
+|-------------|--------------|
+| Backend | Python, Django, DRF |
+| Database | PostgreSQL |
+| Caching | Redis |
+| Async Processing | Celery |
+| External API | Spotify Web API |
+| Auth | Spotify OAuth |
+| Deployment | Docker, Docker Compose |
+
