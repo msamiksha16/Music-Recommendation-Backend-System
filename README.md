@@ -3,16 +3,19 @@
 This backend service powers a Music Discovery App that gives personalized recommendations from the Spotify API, stores user preferences, caches results using Redis, and performs async tasks using Celery.
 
 🚀 Features Implemented
+✔ User Management
 
-A fully functional music recommendation backend system with all major requirements completed.
+Create & update user profiles
 
-✅ 1. User Management
+Store preferences:
 
-Create or update user profile
+🎵 Favorite genres
 
-Store user preferences (genres, artists, moods)
+🎤 Favorite artists
 
-Retrieve user profile
+😊 Moods
+
+Retrieve user profile (GET /users/{id}/)
 
 🎵 2. Recommendations Engine
 
