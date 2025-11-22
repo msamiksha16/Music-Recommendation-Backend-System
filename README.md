@@ -2,64 +2,37 @@
 
 This backend service powers a Music Discovery App that gives personalized recommendations from the Spotify API, stores user preferences, caches results using Redis, and performs async tasks using Celery.
 
-🚀 Features Implemented
-✔ User Management
+✨ Features
 
-* Create/update profile
+* User Profile Management: Create and update user profiles with name, email, favorite genres, artists, and moods.
 
-* Save genres, moods, favorite artists
+* Spotify-Powered Recommendations: Fetch personalized song recommendations using Spotify Web API.
 
-*GET user profile
+* Caching with Redis: Cache user recommendations to reduce duplicate API calls and speed up responses.
 
-✔ Recommendations Engine
+* Asynchronous Processing with Celery: Refresh recommendations in the background without blocking the API.
 
-* Fetch Spotify recommendations
+* Recommendation Logging: Store generated recommendations in PostgreSQL for analytics and history.
 
-* Cache results in Redis
+* User Activity Tracking: Log actions like play, like, skip to measure engagement.
 
-* Celery background task refresh
+* Analytics & Insights:
 
-* Store logs in PostgreSQL
+    * Total users
 
-✔ User Activity Tracking
+    * Trending genres
 
-* Users can “play”, “like”, “skip” tracks
+    * Trending artists
 
-* Logged in PostgreSQL
+    * Most liked tracks
 
-* Used for analytics
+    * User-specific engagement summary
 
-✔ Analytics APIs
+* Spotify OAuth Integration: Authenticate users via Spotify to personalize recommendations.
 
-* Total users
+* PostgreSQL Database: Robust schema for users, recommendations, and user activity.
 
-* Most liked songs
-
-* Trending artists
-
-* User-specific engagement summary
-
-✔ Spotify OAuth Integration
-
-* Login using Spotify
-
-* Use authorized token for recommendations
-
-✔ Database
-
-* Full PostgreSQL schema
-
-* User, Recommendation, Activity
-
-✔ Dockerized Stack
-
-* Django backend
-
-* PostgreSQL
-
-* Redis
-
-* Celery worker
+* Docker Support: Containerized services (Django, PostgreSQL, Redis, Celery Worker) for easy deployment.
 
 ## 🛠 Tech Stack
 
