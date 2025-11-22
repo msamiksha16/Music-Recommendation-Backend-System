@@ -5,7 +5,7 @@ This backend service powers a Music Discovery App that gives personalized recomm
 🚀 Features Implemented
 ✔ User Management
 
-Create & update user profiles
+* eate & update user profiles
 
 Store preferences:
 
