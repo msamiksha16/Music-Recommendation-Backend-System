@@ -3,63 +3,82 @@
 This backend service powers a Music Discovery App that gives personalized recommendations from the Spotify API, stores user preferences, caches results using Redis, and performs async tasks using Celery.
 
 🚀 Features Implemented
-✔ User Management
 
-Create/update profile
+A fully functional music recommendation backend system with all major requirements completed.
 
-Save genres, moods, favorite artists
+✅ 1. User Management
 
-GET user profile
+Create or update user profile
 
-✔ Recommendations Engine
+Store user preferences (genres, artists, moods)
 
-Fetch Spotify recommendations
+Retrieve user profile
 
-Cache results in Redis
+🎵 2. Recommendations Engine
 
-Celery background task refresh
+Fetch recommendations from Spotify Web API
 
-Store logs in PostgreSQL
+Cache results using Redis
 
-✔ User Activity Tracking
+Background refresh using Celery Worker
 
-Users can “play”, “like”, “skip” tracks
+Store recommendation logs in PostgreSQL
 
-Logged in PostgreSQL
+🎧 3. User Activity Tracking
 
-Used for analytics
+Users can log actions:
 
-✔ Analytics APIs
+❤️ like
+
+▶️ play
+
+⏭️ skip
+
+Activities stored in PostgreSQL
+
+Used for analytics and engagement insights
+
+📊 4. Analytics Endpoints
 
 Total users
 
-Most liked songs
+Total activity events
 
-Trending artists
+Most liked tracks
+
+Trending genres / artists
 
 User-specific engagement summary
 
-✔ Spotify OAuth Integration
+🔐 5. Spotify OAuth Integration
 
-Login using Spotify
+Login with Spotify account
 
-Use authorized token for recommendations
+Secure access token storage in session
 
-✔ Database
+Use Spotify token for personalized recommendation fetching
 
-Full PostgreSQL schema
+🗄️ 6. Database Layer (PostgreSQL)
 
-User, Recommendation, Activity
+Tables implemented:
 
-✔ Dockerized Stack
+UserProfile
 
-Django backend
+Recommendation
 
-PostgreSQL
+UserActivity
 
-Redis
+🐳 7. Dockerized Infrastructure
 
-Celery worker
+(Optional but implemented if needed)
+
+Django API Server
+
+PostgreSQL DB
+
+Redis Cache
+
+Celery Worker
 
 ## 🛠 Tech Stack
 
