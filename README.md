@@ -5,83 +5,61 @@ This backend service powers a Music Discovery App that gives personalized recomm
 🚀 Features Implemented
 ✔ User Management
 
-* eate & update user profiles
+* Create/update profile
 
-Store preferences:
+* Save genres, moods, favorite artists
 
-🎵 Favorite genres
+*GET user profile
 
-🎤 Favorite artists
+✔ Recommendations Engine
 
-😊 Moods
+* Fetch Spotify recommendations
 
-Retrieve user profile (GET /users/{id}/)
+* Cache results in Redis
 
-🎵 2. Recommendations Engine
+* Celery background task refresh
 
-Fetch recommendations from Spotify Web API
+* Store logs in PostgreSQL
 
-Cache results using Redis
+✔ User Activity Tracking
 
-Background refresh using Celery Worker
+* Users can “play”, “like”, “skip” tracks
 
-Store recommendation logs in PostgreSQL
+* Logged in PostgreSQL
 
-🎧 3. User Activity Tracking
+* Used for analytics
 
-Users can log actions:
+✔ Analytics APIs
 
-❤️ like
+* Total users
 
-▶️ play
+* Most liked songs
 
-⏭️ skip
+* Trending artists
 
-Activities stored in PostgreSQL
+* User-specific engagement summary
 
-Used for analytics and engagement insights
+✔ Spotify OAuth Integration
 
-📊 4. Analytics Endpoints
+* Login using Spotify
 
-Total users
+* Use authorized token for recommendations
 
-Total activity events
+✔ Database
 
-Most liked tracks
+* Full PostgreSQL schema
 
-Trending genres / artists
+* User, Recommendation, Activity
 
-User-specific engagement summary
+✔ Dockerized Stack
 
-🔐 5. Spotify OAuth Integration
+* Django backend
 
-Login with Spotify account
+* PostgreSQL
 
-Secure access token storage in session
+* Redis
 
-Use Spotify token for personalized recommendation fetching
-
-🗄️ 6. Database Layer (PostgreSQL)
-
-Tables implemented:
-
-UserProfile
-
-Recommendation
-
-UserActivity
-
-🐳 7. Dockerized Infrastructure
-
-(Optional but implemented if needed)
-
-Django API Server
-
-PostgreSQL DB
-
-Redis Cache
-
-Celery Worker
+* Celery worker
 
 ## 🛠 Tech Stack
 
