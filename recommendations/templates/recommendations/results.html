@@ -1,0 +1,7 @@
+<h1>Recommendations:</h1>
+
+{% for s in recs %}
+<p>{{ s.name }} – {{ s.artist }} (Popularity: {{ s.popularity }})
+  <a href="{{ s.url }}" target="_blank">Play</a>
+</p>
+{% endfor %}

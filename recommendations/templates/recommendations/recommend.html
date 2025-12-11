@@ -1,0 +1,16 @@
+<h2>Get Music Recommendations</h2>
+
+<form method="GET" action="/spotify/recommend/">
+  <label>Genre:</label>
+  <input type="text" name="genre" placeholder="pop" required>
+
+  <label>Mood:</label>
+  <select name="mood">
+    <option value="">None</option>
+    <option value="happy">Happy</option>
+    <option value="sad">Sad</option>
+    <option value="energetic">Energetic</option>
+  </select>
+
+  <button type="submit">Get Songs</button>
+</form>
