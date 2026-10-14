@@ -34,10 +34,31 @@ This backend service powers a Music Discovery App that gives personalized recomm
 
 * Docker Support: Containerized services (Django, PostgreSQL, Redis, Celery Worker) for easy deployment.
 
+## React.js Frontend
+
+The project includes a React.js frontend built with Vite in the `frontend/` directory. It provides a responsive music discovery interface connected to the Django REST API.
+
+Frontend features include:
+
+* Create and update a listener profile with favorite genres, artists, and moods.
+* Browse and search personalized recommendation tracks.
+* Connect to Spotify through the backend OAuth flow.
+* Record play, like, and skip activity and view listening stats.
+
+To run the frontend locally, first start the Django backend and its required services. Then open a terminal in `frontend/` and run:
+
+```sh
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite, usually `http://localhost:5173`. The Vite development server proxies API requests to Django at `http://127.0.0.1:8000`. Spotify-powered recommendations and login require Spotify API credentials in the backend environment. See [frontend/README.md](frontend/README.md) for full setup details.
+
 ## 🛠 Tech Stack
 
 | 🔧 Component | 🚀 Technology |
 |-------------|--------------|
+| Frontend | React.js, JavaScript, Vite |
 | Backend | Python, Django, DRF |
 | Database | PostgreSQL |
 | Caching | Redis |
